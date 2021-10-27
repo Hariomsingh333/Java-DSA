@@ -1,11 +1,15 @@
 public class Main{
     public static void main(String[] args) {
-        // 
-        int arr[] = {15, 18 , 26 , 36 , 45 , 78 , 81 , 95};
-        int target = 78;
-        System.out.println(BinarySearch(arr, target));
+        // ascending order
+        // int arr[] = {15, 18 , 26 , 36 , 45 , 78 , 81 , 95};
+        // int target = 78;
+        // System.out.println(ascendingorder(arr, target));
+        // descending order 
+        int arr[] = {91 , 88, 74, 62, 51, 48, 36};
+        int target = 88;
+        System.out.println(descendingorder(arr, target));
     }
-    public static int BinarySearch(int arr [], int target){
+    public static int ascendingorder(int arr [], int target){
         int start = 0;
         int end = arr.length-1;
         while(end >= start){
@@ -26,6 +30,25 @@ public class Main{
             }else{
                 // ans find
                 return middle;
+            }
+        }
+        return -1;
+    }
+
+    // descending order
+    // target > middle = e = m-1
+    // target < middle = s = m+1
+    public static int descendingorder(int arr [], int target){
+        int start = 0;
+        int end = arr.length-1;
+        while(end >= start){
+            int mid = (start + end)/2;
+            if (target > arr[mid]){
+                end = mid-1;
+            }else if(target<arr[mid]){
+                start =mid+1;
+            }else{
+                return mid;
             }
         }
         return -1;
