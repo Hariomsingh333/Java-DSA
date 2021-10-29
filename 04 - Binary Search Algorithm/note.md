@@ -122,11 +122,3 @@ public class Main{
     }
 
 ```
-
-# Order-Agnostic Binary Search
-
-we see how to implement Binary Search in an array, but the array is sorted, but what if the array is not sorted then?
-<br>
-we know that in Binary Search we work with sorted array in ascending order or descending order
-<br>
-but what if weather you don't know the array sorted array in ascending order or descending order, how will be apply binary search then.
