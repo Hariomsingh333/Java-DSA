@@ -146,7 +146,7 @@ char 2 bytes Stores a single character/letter or ASCII values
    //long - number -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
    long num4 = 10000000L;
    // float - decimal digits
-   float num5 = 3.4;
+   float num5 = 3.4F;
    //double = - long decimal digits
    double num6 = 33.444D;
    // boolean - true or false
